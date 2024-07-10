@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingresar">
+
+    <SearchView
+        android:id="@+id/Buscador"
+        android:layout_width="409dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/madagascar"
+        android:layout_width="236dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/peter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cars"
+        app:srcCompat="@drawable/madagascar_215_" />
+
+    <ImageView
+        android:id="@+id/enredados"
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cars"
+        app:layout_constraintTop_toBottomOf="@+id/Buscador"
+        app:srcCompat="@drawable/enredados_20850_" />
+
+    <ImageView
+        android:id="@+id/cars"
+        android:layout_width="211dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Buscador"
+        app:srcCompat="@drawable/cars_5782_" />
+
+    <ImageView
+        android:id="@+id/peter"
+        android:layout_width="177dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/madagascar"
+        app:layout_constraintTop_toBottomOf="@+id/enredados"
+        app:srcCompat="@drawable/peter_pan__1953_4477_" />
+
+    <TextView
+        android:id="@+id/proximo"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="406dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="55dp"
+        android:text="PROXIMAMENTE"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:autoSizeTextType="uniform"
+        app:drawableTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peter"
+        app:textAllCaps="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
